@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			//显示转换、强制转换、手动转换
+			//Number():将括号里面内容转换成数字 如果不是一个数字，返回NaN(not a number:不是一个数字)
+			//alert();
+			//document.write();
+			//console.log();//输出到控制台
+			
+			//console.log(Number('abc'));//NaN
+			//console.log(Number(true));//1
+			//console.log(Number(false));//0
+			//console.log('5');//5
+			//console.log(Number(''));//0
+			//console.log(Number(null));//0
+			//console.log(Number(undefined));//NaN
+			
+			
+			
+			
+			//String():将括号里面内容转换成字符串
+			//alert(typeof String(123));//string
+			//console.log(String(true));//'true'
+			
+			//Boolean():将括号里面内容转换成布尔值
+			//字符串：非空即真   数字：非0即真    null undefined NaN:假的
+			//哪些值转成布尔值是false: ''  0   null  undefined   NaN
+			/*console.log(Boolean(''));//false
+			console.log(Boolean(0));//false
+			console.log(Boolean(null));//false
+			console.log(Boolean(undefined));//false
+			console.log(Boolean(NaN));//false*/
+			
+//			alert(2==true);//false
+//			alert(2==false);//false
+//			alert(!2==true);//false
+//			alert(!2==false);//true
+//			alert(!!2==false);//false
+//			alert(!!2==true);//true
+//			alert(!0==true)//true
+//			alert(!!0==false)//true
+			
+			
+			//重点
+			//alert(null==undefined);//true js默认规定null==undefined;
+			//其他的任意的非null,非undefined和null和undefined比较都是false;
+			
+			
+			console.log(null==undefined);//true
+			console.log(undefined==undefined);//true
+			console.log(null==null);//true
+			//系统约定
+			
+			console.log(NaN==NaN);//false
+			
+			console.log(null===undefined);//false  恒等
+			
+			console.log(true==undefined);//false
+			console.log(true==null);//false
+			console.log(false==null);//false
+			console.log(false==undefined);//false
+			console.log(1==undefined);//false
+			console.log(1==null);//false
+			console.log(''==undefined);//false
+			console.log(''==null);//false
+			console.log(0==undefined);//false
+			console.log(0==null);//false
+			
+			
+			//parseInt() ： 将括号的内容转换成对应的整数
+			//parseFloat() ： 将括号的内容转换成对应的浮点数(小数)
+			
+			//var str='3.14';
+			
+			//alert(Number(str)+5);//8.14
+			/*alert(parseInt('1234abc'));//1234 将字符串转换成数字，前提是字符串里面开始位置是数字。
+			alert(parseInt('200px'));//200
+			alert(parseInt('200px123'));//200*/
+			4
+			/*var str1='3.68';
+			alert(parseInt(str1));//3
+			alert(parseFloat(str1));//3.68*/
+			
+			//alert(0.1+0.2==0.3);//false
+			//0.1+0.2=0.30000000000004
+			//toFixed(2):数字下面的方法，保留多少位小数，括号里面的值就是小数的位数。
+			
+			/*var num1=0.1+0.2;   //0.2+0.4
+			alert(num1);
+			alert(num1.toFixed(1));*/
+			
+			
+			
+			
+			
+			//类型区分
+//			alert(typeof Number());//number
+//			alert(typeof Number);//function
+//			*****alert(typeof NaN);//number*****
+//			alert(typeof Math);//object;
+//			alert(typeof Math.pow);//function
+//			alert(typeof Math.pow());//number
+		</script>
+	</body>
+</html>
