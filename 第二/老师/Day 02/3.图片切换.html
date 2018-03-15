@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#baidu{
+				width: 560px;
+				height: 305px;
+				border: 1px solid black;
+				margin:0 auto;
+				position: relative;
+			}
+			#baidu img{
+				width: 560px;
+				height: 305px;
+				display: block;
+			}
+			#left,#right{
+				position: absolute;
+				top:50%;
+				font-size: 60px;
+				text-decoration: none;
+				color: #fff;
+				margin-top: -30px;
+			}
+			#left{
+				left:20px;
+			}
+			#right{
+				right:20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="baidu">
+			<img src="img/1.jpg" id="img1"/>
+			<a href="javascript:;" id="left">&lt;</a>
+			<a href="javascript:;" id="right">&gt;</a>
+		</div>
+		
+		<script type="text/javascript">
+			var img1=document.getElementById('img1');
+			var right=document.getElementById('right');
+			//img1.src='img/1.jpg';//赋值
+			var num=1;
+			
+			//点击右箭头，执行{}里面的代码
+			right.onclick=function(){
+				num++;
+				if(num>4){
+					num=1;
+				}
+				img1.src='img/'+num+'.jpg';
+			}
+			
+			
+			
+		</script>
+		
+	</body>
+</html>
